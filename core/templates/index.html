@@ -4,7 +4,7 @@
 {% load bootstrap %} 
 <main class="container px-3">
     <!-- Inicio home-->
-    <section style="background-color: aqua;" id="home" class="home py-5 container">
+    <section id="home" class="home py-5 container">
         <div class="row py-lg-5">
             <div class="col-lg-6 col-md-8 mx-auto">
                 <div data-aos="fade-up">
@@ -12,8 +12,11 @@
                         Para Seu Cliente <br>
                         Encontrar Sua Empresa</h1>
                     <p class="">A principal razão dessa importância é que as pessoas são mais susceptíveis de encontrar uma empresa que tem uma presença na web. Hoje, a maioria das pessoas pesquisam produtos e serviços online antes de fazer uma compra, e se você não tem um site, você está perdendo todo esse potencial de negócio.</p>
-                    <a class="btn btn-light btn-lg" href="#" role="button">Ver Portifólio</a>
-                    <a class="btn btn-success btn-lg" href="#" role="button">Entre em Contato</a>
+                    <!-- <a class="btn btn-light btn-lg" href="#" role="button">Ver Portifólio</a> -->
+                    <a class="shadow-lg d-md-table btn btn-success rounded-pill" href="#" role="button">
+                        <i class="bi bi-whatsapp"></i>
+                        Entre em Contato
+                    </a>
                 </div>
             </div>
             <div class="col-6">
@@ -21,7 +24,14 @@
         </div>
     </section>     
     <!-- Fim home-->
-
+    <!-- Inicio Serviços -->
+    <section id="servicos" class="servicos py-5 container">
+        <div class="title" data-aos="fade-up">
+            <h2 class="fw-bold">Nossos<span> Serviços</span> </h2>
+        </div>
+        
+    </section>
+    <!-- fim Serviços -->
     <!-- Contact -->
     <section>
         <!-- <form action="{% url 'cliente_novo' %}" method="POST" class="php-email-form">
