@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block main %} 
+{% load bootstrap %} 
+<main class="container px-3">
+    <!-- Inicio home-->
+    <section style="background-color: aqua;" id="home" class="home py-5 container">
+        <div class="row py-lg-5">
+            <div class="col-lg-6 col-md-8 mx-auto">
+                <div data-aos="fade-up">
+                    <h1 class="space fw-bold">Fazemos o Site Ideal <br>
+                        Para Seu Cliente <br>
+                        Encontrar Sua Empresa</h1>
+                    <p class="">A principal razão dessa importância é que as pessoas são mais susceptíveis de encontrar uma empresa que tem uma presença na web. Hoje, a maioria das pessoas pesquisam produtos e serviços online antes de fazer uma compra, e se você não tem um site, você está perdendo todo esse potencial de negócio.</p>
+                    <a class="btn btn-light btn-lg" href="#" role="button">Ver Portifólio</a>
+                    <a class="btn btn-success btn-lg" href="#" role="button">Entre em Contato</a>
+                </div>
+            </div>
+            <div class="col-6">
+            </div>
+        </div>
+    </section>     
+    <!-- Fim home-->
+
+    <!-- Contact -->
+    <section>
+        <!-- <form action="{% url 'cliente_novo' %}" method="POST" class="php-email-form">
+            <div class="row gy-4"> -->
+            <!--Seguranca-->
+            <!-- {% csrf_token %}
+            {{ form|bootstrap }}
+                <div class="col-md-12 text-center">
+                    <button type="submit">Enviar Mensagem</button>
+                </div>
+            </div>
+        </form> -->
+        <!-- alerta -->
+        <!-- {% if messages %}
+            {% for message in messages %}
+                <div class="alert {{message.tags}} alert-dismissible fade show" role="alert">
+                    <strong>{{message}}</strong>
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div> 
+            {% endfor %}
+        {% endif %} -->
+        <!--Fim Alerta -->
+    </section>
+    </main>
+{% endblock %}
