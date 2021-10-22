@@ -25,7 +25,7 @@ body {
 }
 section {
   width: 100%;
-  height: 100vh;
+  height: 90vh;
 }
 a {
   text-decoration: none;
@@ -36,7 +36,7 @@ a {
 .navbar {
   padding-top: 2rem;
   padding-bottom: 2rem;
-  background-color: transparent !important;
+  background-color: #fff !important;
 }
 .navbar-brand h1 {
   color: var(--color-three);
@@ -88,6 +88,7 @@ li a {
 }
 .title h1 {
   color: var(--color-font);
+  font-size: 20px;
 }
 .title span {
   color: var(--color-tree);
@@ -114,4 +115,7 @@ li a {
 }
 .card a:hover {
   color: var(--color-secound);
+}
+img {
+  height: 20rem;
 }
