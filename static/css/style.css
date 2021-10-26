@@ -101,6 +101,14 @@ ul {
 .section-title h2 span {
   color: var(--main-color);
 }
+.section-title p {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 500;
+  color: var(--block-400);
+  margin: 0 0 15px;
+  text-align: center;
+}
 .owl-carousel .owl-dots {
   padding: 0 15px;
   text-align: center;
