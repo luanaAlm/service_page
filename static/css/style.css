@@ -85,16 +85,28 @@ ul {
     transform: translateY(0px);
   }
 }
-.effects-wrap .effect {
+/* .effects-wrap .effect {
   position: absolute;
   z-index: -1;
 }
+.effects-wrap .effect-1 {
+  left: 20%;
+  top: 20%;
+  font-size: 20px;
+  color: var(--color-2);
+} */
 /*--------------------------------------------------------------
 # Nav
 --------------------------------------------------------------*/
 .navbar {
-  background-color: var(--main-color);
+  background-color: transparent;
   padding: 20px 0;
+  transition: all 0.5s ease;
+}
+.navbar.navbar-shrink {
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  background-color: var(--main-color);
+  padding: 10px 0;
 }
 .navbar > .container {
   padding: 0 15px;
