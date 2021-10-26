@@ -12,7 +12,8 @@ $(document).ready(function(){
     /* ---owl carousel Services--- */
     $('.services-carousel').owlCarousel({
         loop:true,
-        margin:10,
+        margin:0,
+        autoplay:true,
         responsiveClass:true,
         responsive:{
             0:{
