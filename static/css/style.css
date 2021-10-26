@@ -85,16 +85,22 @@ ul {
     transform: translateY(0px);
   }
 }
-/* .effects-wrap .effect {
-  position: absolute;
-  z-index: -1;
+.section-padding {
+  padding: 80px 0;
 }
-.effects-wrap .effect-1 {
-  left: 20%;
-  top: 20%;
-  font-size: 20px;
-  color: var(--color-2);
-} */
+.section-title {
+  margin-bottom: 60px;
+}
+.section-title h2 {
+  font-size: 40px;
+  color: var(--block-900);
+  font-weight: 700;
+  text-transform: capitalize;
+  text-align: center;
+}
+.section-title h2 span {
+  color: var(--main-color);
+}
 /*--------------------------------------------------------------
 # Nav
 --------------------------------------------------------------*/
@@ -203,5 +209,85 @@ ul {
   margin-top: 40px;
 }
 /*--------------------------------------------------------------
-# Serviços
+# Services
 --------------------------------------------------------------*/
+.services .services-item {
+  box-shadow: var(--shadow-black-100);
+  margin: 15px;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+/* .services .services-item::before,
+.services .services-item::before::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  border-radius: 50px;
+}
+.services .services-item::before {
+  height: 20px;
+  width: 20px;
+  background-color: var(--color-1);
+  left: 10px;
+  top: 40%;
+}
+.services .services-item::after {
+  height: 30px;
+  width: 30px;
+  background-color: var(--color-2);
+  right: 10px;
+  top: 80%;
+} */
+
+.services .services-item .icon {
+  height: 60px;
+  width: 50px;
+  margin: 0 auto 30px;
+  text-align: center;
+  font-size: 30px;
+  color: var(--main-color);
+  position: relative;
+  z-index: 1;
+  transition: all 0.5s ease;
+}
+.services .services-item .icon::before {
+  content: "";
+  position: absolute;
+  left: 100%;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--main-color);
+  transition: all 0.5s ease;
+  z-index: -1;
+  opacity: 0;
+}
+.services .services-item:hover .icon {
+  color: #ffffff;
+  font-size: 20px;
+}
+.services .services-item:hover .icon::before {
+  left: 0;
+  border-radius: 50%;
+  opacity: 1;
+}
+.services .services-item .icon i {
+  line-height: 60px;
+}
+.services .services-item .icon h3 {
+  font-size: 22px;
+  margin: 0 0 20px;
+  color: var(--block-900);
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.services .services-item .icon p {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 300;
+  color: var(--block-400);
+  margin: 0 0 15px;
+}
