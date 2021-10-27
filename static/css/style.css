@@ -326,3 +326,32 @@ ul {
   text-align: left;
   margin-top: 15px;
 }
+/*--------------------------------------------------------------
+# portfolio
+--------------------------------------------------------------*/
+.portfolio-item {
+  margin: 15px;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: var(--shadow-black-100);
+}
+.portfolio-item h3 {
+  font-size: 18px;
+  color: var(--block-900);
+  font-weight: 500;
+  margin: 15px 0 5px;
+  text-transform: capitalize;
+}
+
+.portfolio-item span {
+  display: block;
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--block-400);
+  text-transform: capitalize;
+}
+.portfolio-item img {
+  width: 360px;
+  height: 160px;
+  object-fit: cover;
+}
