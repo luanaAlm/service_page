@@ -1,13 +1,15 @@
 from django.contrib import messages
 from django.shortcuts import render
+from .models import Portifolio
 from .form import ClienteForm
 from django.shortcuts import redirect, render
 
 
 def index(request):
+    portifolios = Portifolio.objects.all()
     form = ClienteForm()
     return render(request, "index.html", {
-        "form": form
+        "form": form, "portifolios": portifolios
     })
 
 
