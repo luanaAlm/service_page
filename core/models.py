@@ -45,6 +45,7 @@ class Portifolio (models.Model):
     ID_Portifolio = models.AutoField(primary_key=True)
     image = models.ImageField(
         upload_to="img_portifolio/%y", blank=False, null=False)
+    link = models.URLField(max_length=400)
     empresa = models.CharField(max_length=100, blank=False, null=False)
     cidade = models.CharField(max_length=100, blank=False, null=False)
     estado = models.CharField(max_length=100, choices=UF_CHOICES)
