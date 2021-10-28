@@ -3,7 +3,7 @@
     <a href="#Tecnologias">Tecnologias</a> 
 </p>
 
-<h4 align="center"> Pagina em construção</h4>
+<h4 align="center"> Página em construção</h4>
 
 
 # Tecnologias
