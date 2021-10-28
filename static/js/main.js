@@ -45,4 +45,10 @@ $(document).ready(function(){
             }
         }
     });
-})
+    /* ---scrolling - scrollit --- */
+    $(function(){
+        $.scrollIt({
+            topOffset: -50
+        });
+    });
+});
