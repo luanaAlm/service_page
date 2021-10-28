@@ -610,4 +610,29 @@ ul {
   .navbar.navbar-shrink .navbar-nav {
     background-color: var(--main-color);
   }
+  .home-img .circle {
+    height: 320px;
+    width: 320px;
+  }
+  .home-img .circle::before {
+    left: 18px;
+    top: 18px;
+    transform-origin: 142px 142px;
+  }
+  .home-text h1 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .home-text {
+    margin-bottom: 80px;
+  }
+}
+@media (max-width: 575px) {
+  .home-text h1 {
+    margin-bottom: 30px;
+  }
+  .home-text p {
+    margin-bottom: 16px;
+  }
 }
