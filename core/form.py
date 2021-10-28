@@ -1,5 +1,4 @@
-from django.db import models
-from django.forms import ModelForm, fields
+from django.forms import ModelForm
 from .models import Cliente
 
 
