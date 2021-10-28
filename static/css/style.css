@@ -68,6 +68,25 @@ ul {
   color: #ffffff;
   background-color: var(--color-3);
 }
+.btn-2 {
+  background-color: var(--main-color);
+  padding: 12px 30px;
+  border: none;
+  border-radius: 30px;
+  color: #ffffff;
+  font-size: 16px;
+  text-transform: capitalize;
+  transition: all 0.5s ease;
+  box-shadow: var(--shadow-black-300);
+  font-weight: 500;
+}
+.btn-2:focus {
+  box-shadow: var(--shadow-black-300);
+}
+.btn-2:hover {
+  color: var(--main-color);
+  background-color: #ffffff;
+}
 @keyframes spin_01 {
   0% {
     transform: rotate(0deg);
@@ -413,4 +432,88 @@ ul {
   color: var(--block-400);
   line-height: 26px;
   margin: 0;
+}
+/*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+.contact {
+  background-color: var(--block-100);
+}
+.contact-info h3 {
+  font-size: 20px;
+  color: var(--block-900);
+  font-weight: 500;
+  margin: 0 0 40px;
+}
+.contact-info-item {
+  position: relative;
+  padding-left: 55px;
+  margin-bottom: 30px;
+}
+.contact-info-item i {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  font-size: 16px;
+  color: var(--main-color);
+  border: 1px solid --main-color;
+  text-align: center;
+  line-height: 38px;
+  left: 0;
+  top: 0;
+}
+.contact-info-item h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 10px;
+  color: var(--block-900);
+}
+.contact-info-item p {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+  line-height: 26px;
+  color: var(--block-400);
+}
+.contact-form .form-group {
+  margin-bottom: 25px;
+}
+.contact-form .control-label {
+  padding-left: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+  line-height: 26px;
+  color: var(--block-400);
+}
+.contact-form #id_nome,
+#id_email,
+#id_telefone {
+  height: 52px;
+  border: 1px solid transparent;
+  box-shadow: var(--shadow-black-100);
+  border-radius: 15px;
+  padding: 0 24px;
+  color: var(--block-900);
+  background-color: var(--block-000);
+  transition: all 0.5s ease;
+}
+.contact-form #id_mensagem {
+  padding-top: 12px !important;
+  height: 140px;
+  resize: none;
+  border: 1px solid transparent;
+  box-shadow: var(--shadow-black-100);
+  border-radius: 15px;
+  padding: 0 24px;
+  color: var(--block-900);
+  background-color: var(--block-000);
+  transition: all 0.5s ease;
+}
+.contact-form #id_nome:focus,
+#id_email:focus,
+#id_telefone:focus,
+#id_mensagem:focus {
+  border-color: var(--main-color);
 }
