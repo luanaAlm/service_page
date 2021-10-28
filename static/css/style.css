@@ -1,6 +1,7 @@
 /**
 * Author: Luana Rodrigues Almeida
 * Email: luanarodrigues3211@gmail.com
+* video: https://www.youtube.com/watch?v=an0_u96ac8A&t=7922s
 */
 
 /*--------------------------------------------------------------
@@ -29,7 +30,7 @@
 * {
   padding: 0;
   margin: 0;
-  outline: none !important;
+  outline: none;
   /* text-decoration: none; */
 }
 
@@ -584,4 +585,29 @@ ul {
   font-weight: 300;
   margin: 50px 0 0;
   border-top: 1px solid rgba(255, 255, 225, 0.2);
+}
+/*--------------------------------------------------------------
+# Responsividade 
+--------------------------------------------------------------*/
+@media (max-width: 991px) {
+  .navbar-toggler {
+    background-color: var(--dark-to-main-color);
+    box-shadow: var(--shadow-black-300);
+    height: 34px;
+    width: 44px;
+    padding: 0;
+    font-size: 17px;
+    color: #ffffff;
+  }
+  .navbar-nav {
+    background-color: var(--dark-to-main-color);
+  }
+  .navbar .nav-item {
+    margin: 0;
+    padding: 5px 15px;
+  }
+  .navbar.navbar-shrink .navbar-toggler,
+  .navbar.navbar-shrink .navbar-nav {
+    background-color: var(--main-color);
+  }
 }

@@ -51,4 +51,9 @@ $(document).ready(function(){
             topOffset: -50
         });
     });
+    /* --- navbar - collapse --- */
+    $(".nav-link").on("click", function(){
+        $(".navbar-collapse").collapse("hide");
+    });
+    
 });
