@@ -16,7 +16,7 @@
   --main-color: #8e2de2;
   --color-1: #e91e63;
   --color-2: #f5ae10;
-  --color-3: #09d69c;
+  --color-3: #25d366;
   --bg-dark: #2d2c2f;
   --main-to-dark-color: var(--main-color);
   --dark-to-main-color: var(--bg-dark);
@@ -612,6 +612,29 @@ ul {
   margin: 50px 0 0;
   border-top: 1px solid rgba(255, 255, 225, 0.2);
 }
+
+/*--------------------------------------------------------------
+# WhatsApp
+--------------------------------------------------------------*/
+.button-whasapp {
+  right: 25px;
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  background-color: var(--color-3);
+  color: #ffffff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: var(--shadow-black-300);
+  z-index: 100;
+  margin-top: 16px;
+}
+.button-whasapp .my-float {
+  margin-top: 16px;
+  color: #ffffff;
+}
 /*--------------------------------------------------------------
 # Responsividade 
 --------------------------------------------------------------*/
@@ -662,6 +685,15 @@ ul {
   .section-title h2 {
     font-size: 35px;
   }
+  .button-whasapp {
+    width: 50px;
+    height: 50px;
+    right: 15px;
+    bottom: 25px;
+  }
+  .button-whasapp .my-float {
+    margin-top: 10px;
+  }
 }
 @media (max-width: 575px) {
   .home-text h1 {
@@ -672,5 +704,14 @@ ul {
   }
   .section-title h2 {
     font-size: 30px;
+  }
+  .button-whasapp {
+    width: 50px;
+    height: 50px;
+    right: 15px;
+    bottom: 25px;
+  }
+  .button-whasapp .my-float {
+    margin-top: 10px;
   }
 }
