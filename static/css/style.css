@@ -622,10 +622,19 @@ ul {
   .home-text h1 {
     font-size: 40px;
   }
+  .footer-col {
+    margin-bottom: 30px;
+  }
 }
 @media (max-width: 767px) {
   .home-text {
     margin-bottom: 80px;
+  }
+  .contact-form {
+    margin-top: 20px;
+  }
+  .section-title h2 {
+    font-size: 35px;
   }
 }
 @media (max-width: 575px) {
@@ -634,5 +643,8 @@ ul {
   }
   .home-text p {
     margin-bottom: 16px;
+  }
+  .section-title h2 {
+    font-size: 30px;
   }
 }
