@@ -12,7 +12,8 @@
 # General
 --------------------------------------------------------------*/
 :root {
-  --main-color: #7857fe;
+  /* --main-color: #7857fe; */
+  --main-color: #8e2de2;
   --color-1: #e91e63;
   --color-2: #f5ae10;
   --color-3: #09d69c;
@@ -33,7 +34,6 @@
   outline: none;
   /* text-decoration: none; */
 }
-
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
@@ -200,7 +200,19 @@ ul {
 .home {
   min-height: 100vh;
   padding: 150px 0;
-  background-color: var(--main-to-dark-color);
+  background: #8e2de2; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #4a00e0,
+    #8e2de2
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #4a00e0,
+    #8e2de2
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  /* background-color: var(--main-to-dark-color); */
   border-radius: 0 0 200px 0;
   position: relative;
   z-index: 1;
@@ -219,10 +231,10 @@ ul {
   font-weight: 300;
 }
 .home-img img {
-  max-width: 250px;
+  max-width: 750px;
   width: 100%;
-  box-shadow: var(--shadow-black-100);
-  border-radius: 32px;
+  /* box-shadow: var(--shadow-black-100); */
+  /* border-radius: 32px; */
   animation: bounceTop_01 3s ease infinite;
 }
 .home-img {
@@ -375,6 +387,9 @@ ul {
   height: 160px;
   object-fit: cover;
 }
+.portfolio-item a {
+  text-decoration: none;
+}
 /*--------------------------------------------------------------
 # FAQ
 --------------------------------------------------------------*/
@@ -522,7 +537,18 @@ ul {
 # Footer 
 --------------------------------------------------------------*/
 .footer {
-  background-color: var(--main-color);
+  background: #8e2de2; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #4a00e0,
+    #8e2de2
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #4a00e0,
+    #8e2de2
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   padding: 50px 0;
 }
 .footer-col h3 {
