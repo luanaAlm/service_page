@@ -268,63 +268,60 @@ ul {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
-.services .services-item {
+/* .services .row {
+  display: flex;
+  flex-wrap: wrap;
+} */
+.services-content {
   box-shadow: var(--shadow-black-100);
-  margin: 15px;
-  padding: 30px;
   border-radius: 10px;
-  text-align: center;
-  position: relative;
-  z-index: 1;
 }
-.services .services-item .icon {
-  height: 60px;
-  width: 50px;
-  margin: 0 auto 30px;
-  text-align: center;
+.services-content .services-header {
+  padding: 20px 30px;
+  border-bottom: 1px solid var(--block-alpha-100);
+}
+.services-content .services-header h4 {
   font-size: 30px;
+  font-weight: 700;
+  text-align: center;
   color: var(--main-color);
-  position: relative;
-  z-index: 1;
-  transition: all 0.5s ease;
+  padding: 10px 10px;
 }
-.services .services-item .icon::before {
-  content: "";
-  position: absolute;
-  left: 100%;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: var(--main-color);
-  transition: all 0.5s ease;
-  z-index: -1;
-  opacity: 0;
-}
-.services .services-item:hover .icon {
-  color: #ffffff;
-  font-size: 20px;
-}
-.services .services-item:hover .icon::before {
-  left: 0;
-  border-radius: 50%;
-  opacity: 1;
-}
-.services .services-item .icon i {
-  line-height: 60px;
-}
-.services .services-item .icon h3 {
-  font-size: 22px;
-  margin: 0 0 20px;
-  color: var(--block-900);
-  font-weight: 500;
-  text-transform: capitalize;
-}
-.services .services-item .icon p {
+.services-content .services-item p {
   font-size: 16px;
-  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  color: var(--block-400);
+  padding: 20px 30px;
+}
+/* .services-content .services-item .currency {
+} */
+.services-content .services-body {
+  padding: 0 30px;
+}
+.services-content .services-body ul li {
+  font-size: 16px;
   font-weight: 300;
   color: var(--block-400);
-  margin: 0 0 15px;
+  padding: 10px 0 10px 30px;
+  border-bottom: 1px solid var(--block-alpha-100);
+  line-height: 26px;
+  position: relative;
+}
+.services-content .services-body ul li:last-child {
+  border-bottom: none;
+}
+
+.services-content .services-body ul li i {
+  color: var(--main-color);
+  position: absolute;
+  left: 0;
+  top: 12px;
+}
+.services-content .services-footer {
+  background-color: red;
+  padding: 20px 30px 30px;
+  text-align: center;
 }
 /*--------------------------------------------------------------
 # emphasis/destaques
