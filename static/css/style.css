@@ -305,7 +305,7 @@ ul {
 }
 .services-content .services-body ul li {
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 500;
   color: var(--block-400);
   padding: 10px 0 10px 30px;
   border-bottom: 1px solid var(--block-alpha-100);
@@ -377,7 +377,7 @@ ul {
 }
 .aboutUs-itemp p {
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
   margin: 0;
   line-height: 26px;
   color: var(--block-400);
@@ -436,14 +436,14 @@ ul {
   text-transform: capitalize;
 }
 .miss-vis-val-item p {
-  font-size: 16px;
+  font-weight: 400;
   color: var(--block-400);
-  font-weight: 300;
+  font-size: 16px;
   margin: 0 0 30px;
   line-height: 26px;
 }
 .miss-vis-val-item span {
-  font-weight: 500;
+  font-weight: 600;
 }
 /*--------------------------------------------------------------
 # portfolio

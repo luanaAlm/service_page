@@ -48,7 +48,7 @@ $(document).ready(function(){
     /* ---scrolling - scrollit --- */
     $(function(){
         $.scrollIt({
-            topOffset: -50
+            topOffset: 0
         });
     });
     /* --- navbar - collapse --- */
