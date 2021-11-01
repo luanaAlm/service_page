@@ -363,6 +363,30 @@ ul {
   top: 0;
 }
 /*--------------------------------------------------------------
+# Sobre Nós
+--------------------------------------------------------------*/
+.aboutUs-item h4 {
+  font-size: 18px;
+  font-weight: 800;
+  margin: 0 0 10px;
+  color: var(--main-color);
+  padding: 0 0 20px;
+}
+.aboutUs-itemp p {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+  line-height: 26px;
+  color: var(--block-400);
+}
+.aboutUs-item span {
+  font-weight: 600;
+  color: var(--block-900);
+}
+.aboutUs-img img {
+  width: 100%;
+}
+/*--------------------------------------------------------------
 # portfolio
 --------------------------------------------------------------*/
 .portfolio-item {
@@ -680,6 +704,12 @@ ul {
   }
   .services-content {
     margin-bottom: 30px;
+  }
+  .aboutUs-item {
+    padding: 20px;
+  }
+  .aboutUs-item h4 {
+    text-align: center;
   }
 }
 @media (max-width: 767px) {
