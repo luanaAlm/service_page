@@ -319,11 +319,6 @@ ul {
   left: 0;
   top: 12px;
 }
-/* .services-content .services-footer {
-  background-color: red;
-  padding: 20px 30px 30px;
-  text-align: center;
-} */
 /*--------------------------------------------------------------
 # emphasis/destaques
 --------------------------------------------------------------*/
@@ -333,28 +328,39 @@ ul {
 .emphasis-fact-img img {
   width: 100%;
 }
-/* .emphasis-facts .section-title h3 {
-  padding-bottom: 10px;
-  font-size: 16px;
-} */
+.emphasis-fact-text {
+  margin-bottom: 30px;
+}
 .emphasis-fact-text h3 {
-  font-size: 16px;
-  line-height: 26px;
-  color: var(--block-900);
-  margin: 0 0 15px;
-  font-weight: 700;
+  font-size: 18px;
+  font-weight: 800;
+  margin: 0 0 10px;
+  color: var(--main-color);
 }
 .emphasis-fact-text p {
   font-size: 16px;
+  font-weight: 500;
+  margin: 0;
   line-height: 26px;
-  color: var(--block-900);
-  margin: 0 0 15px;
-  font-weight: 300;
+  color: var(--block-400);
 }
 .emphasis-fact-itens {
-  padding: 5px;
-  text-align: left;
-  margin-top: 15px;
+  position: relative;
+  padding-left: 55px;
+  margin-bottom: 30px;
+}
+.emphasis-fact-itens i {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  font-size: 24px;
+  color: var(--main-color);
+  border: 1px solid --main-color;
+  text-align: center;
+  line-height: 38px;
+  left: 0;
+  top: 0;
 }
 /*--------------------------------------------------------------
 # portfolio
