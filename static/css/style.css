@@ -455,6 +455,7 @@ ul {
   box-shadow: var(--shadow-black-100);
 }
 .portfolio-item h3 {
+  padding-top: 10px;
   font-size: 18px;
   color: var(--block-900);
   font-weight: 700;
@@ -463,6 +464,7 @@ ul {
 }
 
 .portfolio-item span {
+  padding-bottom: 15px;
   display: block;
   font-size: 16px;
   font-weight: 500;
@@ -476,6 +478,25 @@ ul {
 }
 .portfolio-item a {
   text-decoration: none;
+}
+.btn-portfolio {
+  background-color: var(--main-color);
+  padding: 5px 15px;
+  border: none;
+  border-radius: 30px;
+  color: #ffffff;
+  font-size: 16px;
+  text-transform: capitalize;
+  transition: all 0.5s ease;
+  box-shadow: var(--shadow-black-300);
+  font-weight: 400;
+}
+.btn-portfolio:focus {
+  box-shadow: var(--shadow-black-300);
+}
+.btn-portfolio:hover {
+  color: var(--main-color);
+  background-color: #ffffff;
 }
 /*--------------------------------------------------------------
 # FAQ

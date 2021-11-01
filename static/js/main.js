@@ -9,7 +9,7 @@ $(document).ready(function(){
         }
     });
 
-    /* ---owl carousel Services--- */
+    /* ---owl carousel Services--- 
     $('.services-carousel').owlCarousel({
         loop:true,
         margin:0,
@@ -26,8 +26,8 @@ $(document).ready(function(){
                 items:3,
             }
         }
-    });
-    /* ---owl carousel portfolio--- */
+    });*/
+    /* ---owl carousel portfolio
     $('.portfolio-carousel').owlCarousel({
         loop:true,
         margin:0,
@@ -44,7 +44,7 @@ $(document).ready(function(){
                 items:3,
             }
         }
-    });
+    });--- */
     /* ---scrolling - scrollit --- */
     $(function(){
         $.scrollIt({
