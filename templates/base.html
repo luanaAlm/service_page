@@ -4,7 +4,7 @@
     <head>
         <!-- Required meta tags -->
         <meta charset="utf-8">
-        
+
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Bootstrap CSS -->
         <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
@@ -14,8 +14,9 @@
         <link rel="stylesheet" href="{% static 'css/fontawesome.css' %}">
         <!--owl Carrosel css-->
         <link href="{% static 'css/owl.carousel.min.css' %}" rel="stylesheet">
-        <!-- Aos 
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />-->
+        <!-- AOS -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        
         
         <title>Padrão Agência Digital</title>
     </head>
@@ -143,6 +144,13 @@
         <script src="https://kit.fontawesome.com/d8695f59a3.js" crossorigin="anonymous"></script>
         <!-- Scrollit Js-->
         <script src="{% static 'js/scrollIt.min.js' %}"></script>
-        
+        <!-- AOS -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                offset: 400,
+                duration: 1000,
+            });
+        </script>
     </body>
 </html>
