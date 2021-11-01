@@ -275,6 +275,7 @@ ul {
 .services-content {
   box-shadow: var(--shadow-black-100);
   border-radius: 10px;
+  height: 35rem;
 }
 .services-content .services-header {
   padding: 20px 30px;
@@ -671,6 +672,9 @@ ul {
   .footer-col {
     margin-bottom: 30px;
   }
+  .services-content {
+    margin-bottom: 30px;
+  }
 }
 @media (max-width: 767px) {
   .home-text {
@@ -690,6 +694,9 @@ ul {
   }
   .button-whasapp .my-float {
     margin-top: 10px;
+  }
+  .services-content {
+    margin-bottom: 30px;
   }
 }
 @media (max-width: 575px) {
