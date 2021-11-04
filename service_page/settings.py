@@ -1,5 +1,6 @@
 from pathlib import Path
 from decouple import config
+import os
 # mensagem
 from django.contrib.messages import constants as messages
 
@@ -26,6 +27,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'bootstrapform',
+    'widget_tweaks',
     'core',
 ]
 
@@ -123,3 +125,13 @@ STATICFILES_DIRS = [
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 MEDIA_URL = "/media/"
+
+# Email Settings
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+
+DEFAULT_FROM_EMAIL = config('DEFAULT_FROM_EMAIL', 'webmaster@localhost')
+EMAIL_HOST = config('EMAIL_HOST', '0.0.0.0')  # localhost
+EMAIL_PORT = config('EMAIL_PORT', 1025, cast=int)
+EMAIL_HOST_USER = config('EMAIL_HOST_USER', '')
+EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD', '')
+EMAIL_USE_TLS = config('EMAIL_USE_TLS', default=False, cast=bool)

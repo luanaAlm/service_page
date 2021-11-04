@@ -23,3 +23,7 @@ def cliente_novo(request):
         messages.error(
             request, 'Houve um erro, reenvie novamente a mensagem!')
         return redirect('index')
+
+
+def email(request):
+    return render(request, "email.html")
