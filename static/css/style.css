@@ -288,6 +288,21 @@ ul {
   margin-top: 40px;
 }
 /*--------------------------------------------------------------
+# Clientes
+--------------------------------------------------------------*/
+.clientes-item .clientes-img-box {
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  border: 4px solid #ffffff;
+  border-radius: 50%;
+}
+.clientes-item .clientes-img-box img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+/*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
 /* .services .row {

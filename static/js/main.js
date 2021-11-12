@@ -9,8 +9,8 @@ $(document).ready(function(){
         }
     });
 
-    /* ---owl carousel Services--- 
-    $('.services-carousel').owlCarousel({
+    /* ---owl carousel Cliente--- */
+    $('.clientes-carousel').owlCarousel({
         loop:true,
         margin:0,
         autoplay:true,
@@ -23,10 +23,10 @@ $(document).ready(function(){
                 items:2,
             },
             1000:{
-                items:3,
+                items:4,
             }
         }
-    });*/
+    });
     /* ---owl carousel portfolio
     $('.portfolio-carousel').owlCarousel({
         loop:true,

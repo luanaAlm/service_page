@@ -13,7 +13,7 @@ class Cliente(models.Model):
         return template.format(self)
 
 
-class Portifolio (models.Model):
+class Portifolio_cliente (models.Model):
     UF_CHOICES = (
         ('AC', 'Acre'),
         ('AL', 'Alagoas'),
@@ -43,6 +43,8 @@ class Portifolio (models.Model):
         ('TO', 'Tocantins')
     )
     ID_Portifolio = models.AutoField(primary_key=True)
+    logomarca = models.ImageField(
+        upload_to="img_portifolio/%y", blank=False, null=False)
     image = models.ImageField(
         upload_to="img_portifolio/%y", blank=False, null=False)
     link = models.URLField(max_length=400)

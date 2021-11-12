@@ -1,15 +1,15 @@
 from django.contrib import messages
 from django.shortcuts import render
-from .models import Portifolio
+from .models import Portifolio_cliente
 from .form import ClienteForm
 from django.shortcuts import redirect, render
 
 
 def index(request):
-    #portifolios = Portifolio.objects.all()
-    form = ClienteForm()
+    port = Portifolio_cliente.objects.all()
     return render(request, "index.html", {
-        "form": form})
+        "port": port,
+    })
 
 
 def landingPage(request):
