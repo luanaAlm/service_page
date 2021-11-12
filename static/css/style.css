@@ -51,11 +51,11 @@ ul {
   list-style: none;
 }
 .btn-1 {
-  background-color: #ffffff;
+  background-color: var(--color-3);
   padding: 12px 30px;
   border: none;
   border-radius: 30px;
-  color: var(--main-color);
+  color: #ffffff;
   font-size: 16px;
   text-transform: capitalize;
   transition: all 0.5s ease;
@@ -66,8 +66,8 @@ ul {
   box-shadow: var(--shadow-black-300);
 }
 .btn-1:hover {
-  color: #ffffff;
-  background-color: var(--color-3);
+  color: var(--main-color);
+  background-color: #ffffff;
 }
 .btn-2 {
   background-color: var(--main-color);
@@ -85,6 +85,25 @@ ul {
   box-shadow: var(--shadow-black-300);
 }
 .btn-2:hover {
+  color: var(--main-color);
+  background-color: #ffffff;
+}
+.btn-3 {
+  background-color: var(--color-1);
+  padding: 12px 30px;
+  border: none;
+  border-radius: 30px;
+  color: #ffffff;
+  font-size: 16px;
+  text-transform: capitalize;
+  transition: all 0.5s ease;
+  box-shadow: var(--shadow-black-300);
+  font-weight: 500;
+}
+.btn-3:focus {
+  box-shadow: var(--shadow-black-300);
+}
+.btn-3:hover {
   color: var(--main-color);
   background-color: #ffffff;
 }
