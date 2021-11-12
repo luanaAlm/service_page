@@ -12,18 +12,6 @@ def index(request):
         "form": form})
 
 
-def cliente_novo(request):
-    form = ClienteForm(request.POST or None)
-    if form.is_valid():
-        form.save()
-        messages.success(request, 'Sua mensagem foi enviada com sucesso!')
-        return redirect('index')
-    else:
-        messages.error(
-            request, 'Houve um erro, reenvie novamente a mensagem!')
-        return redirect('index')
-
-
 def landingPage(request):
     return render(request, "servicos/landing_page.html")
 
@@ -53,7 +41,21 @@ def Duvidas(request):
 
 
 def Contato(request):
-    return render(request, "contato.html")
+    form = ClienteForm()
+    return render(request, "contato.html", {
+        "form": form})
+
+
+def cliente_novo(request):
+    form = ClienteForm(request.POST or None)
+    if form.is_valid():
+        form.save()
+        messages.success(request, 'Sua mensagem foi enviada com sucesso!')
+        return redirect('index')
+    else:
+        messages.error(
+            request, 'Houve um erro, reenvie novamente a mensagem!')
+        return redirect('index')
 
 
 def Orcamento(request):
