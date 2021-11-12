@@ -76,6 +76,28 @@
         <div class="">
             {% block main %} {% endblock %}
         </div>
+        <!-- Inicio Orçamento -->
+        <section class="orcamento-footer section-padding">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-md-12">
+                        <div class="orcamento-footer-title">
+                        <h4>Faça seu Orçamento!</h4>
+                            <p>
+                                Que tal fazer um orçamento personalizado e sem compromisso? <br>
+                                Preencha nosso formulario com suas informações e nossa equipe entrerá em contato.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12"> 
+                        <a href="{% url 'orcamento' %}" class="btn btn-2">FAZER ORÇAMENTO </a>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                </div>
+            </div>
+        </section>
+        <!-- Fim Orçamento -->
         <!-- Inicio Footer -->
         <footer class="footer">
             <div class="container">
@@ -94,12 +116,13 @@
                         <div class="footer-col">
                             <h3>Links rápidos</h3>
                             <ul>
-                                <li><a href="#home">Home</a></li>
-                                <li><a href="#services">Serviços</a></li>
-                                <li><a href="#aboutUs">Sobre nós</a></li>
-                                <li><a href="#portfolio">Portifólio</a></li>
-                                <li><a href="#faq">Duvidas</a></li>
-                                <li><a href="#contact">Contato</a></li>
+                                <li><a href="{% url 'index' %}">Home</a></li>
+                                <!-- <li><a href="{% url 'index' %}">Serviços</a></li> -->
+                                <li><a href="{% url 'sobre_nos' %}">Sobre nós</a></li>
+                                <li><a href="{% url 'portifolio' %}">Portifólio</a></li>
+                                <li><a href="{% url 'duvidas' %}">Duvidas</a></li>
+                                <li><a href="{% url 'contato' %}">Contato</a></li>
+                                <li><a href="{% url 'orcamento' %}">Orçamento</a></li>
                             </ul>
                         </div>
                     </div>

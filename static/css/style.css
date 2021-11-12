@@ -153,7 +153,7 @@ ul {
 # Nav
 --------------------------------------------------------------*/
 .navbar {
-  background-color: transparent;
+  background-color: var(--main-color) !important;
   padding: 20px 0;
   transition: all 0.5s ease;
 }
@@ -640,6 +640,32 @@ ul {
 #id_telefone:focus,
 #id_mensagem:focus {
   border-color: var(--main-color);
+}
+/*--------------------------------------------------------------
+# Orçamento-footer
+--------------------------------------------------------------*/
+
+.orcamento-footer {
+  background-color: var(--block-100);
+}
+/* .orcamento-footer-title {
+  margin-bottom: 60px;
+} */
+.orcamento-footer-title h4 {
+  font-size: 50px;
+  color: var(--block-900);
+  font-weight: 700;
+  text-transform: capitalize;
+  text-align: center;
+  margin: 0;
+}
+.orcamento-footer-title p {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 500;
+  color: var(--block-400);
+  margin: 0 0 15px;
+  text-align: center;
 }
 /*--------------------------------------------------------------
 # Footer
