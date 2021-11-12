@@ -1,5 +1,174 @@
-{% extends 'base.html' %}
 {% load static %}
-{% block main %}
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
 
-{% endblock %}
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Bootstrap CSS -->
+        <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+        <!-- Template Main CSS File -->
+        <link href="{% static 'css/style.css' %}" rel="stylesheet">
+        <!-- Icons -->
+        <link rel="stylesheet" href="{% static 'css/fontawesome.css' %}">
+        <!--owl Carrosel css-->
+        <link href="{% static 'css/owl.carousel.min.css' %}" rel="stylesheet">
+        <!-- AOS -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        
+        
+        <title>Padrão Agência Digital</title>
+    </head>
+    <body>
+        <!-- Inicio Nav -->
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <!-- Brand -->
+            <a class="navbar-brand" href="{% url 'index' %}">
+                <img width="140px" src="{% static 'img/logo.png'%}" alt="Padrão agencia digital">
+            </a>
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <i class="fas fa-bars"></i>
+            </button>
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active btn-efect" aria-current="page" href="{% url 'index' %}">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Serviços
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="{% url 'landing_page' %}">Landing Page</a>
+                            <a class="dropdown-item" href="{% url 'site_institucional' %}">Site Institucional</a>
+                            <!-- <div class="dropdown-divider"></div> -->
+                            <a class="dropdown-item" href="{% url 'loja_virtual' %}">Loja Virtual</a>
+                            <a class="dropdown-item" href="{% url 'social_media' %}">Social Media</a>
+                        </div>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link active btn-efect" aria-current="page" data-scroll-nav="1" href="#">Serviços</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link active btn-efect" aria-current="page" href="{% url 'sobre_nos' %}">Sobre nós</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active btn-efect" aria-current="page" href="{% url 'portifolio' %}">Portifólio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active btn-efect" aria-current="page" href="{% url 'duvidas' %}">Duvidas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class=" nav-link active btn-efect" aria-current="page" href="{% url 'contato' %}">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class=" nav-link active btn-efect btn-light" aria-current="page" href="{% url 'orcamento' %}">Orçamento</a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+        <!-- Fim Nav -->
+        <div class="">
+            {% block main %} {% endblock %}
+        </div>
+        <!-- Inicio Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-col">
+                            <h3>Sobre nós</h3>
+                            <p>A Padrão Agencia Digital é uma empresa de criação de 
+                                sites profissionais.
+                                Nós projetamos, desenvolvemos e gerenciamos sites de 
+                                para seu empreendimento e clientes.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-col">
+                            <h3>Links rápidos</h3>
+                            <ul>
+                                <li><a href="{% url 'index' %}">Home</a></li>
+                                <!-- <li><a href="{% url 'index' %}">Serviços</a></li> -->
+                                <li><a href="{% url 'sobre_nos' %}">Sobre nós</a></li>
+                                <li><a href="{% url 'portifolio' %}">Portifólio</a></li>
+                                <li><a href="{% url 'duvidas' %}">Duvidas</a></li>
+                                <li><a href="{% url 'contato' %}">Contato</a></li>
+                                <li><a href="{% url 'orcamento' %}">Orçamento</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-col">
+                            <h3>Redes sociais</h3>
+                            <ul>
+                                <li><a href="">Instagram</a></li>
+                                <li><a href="">Facebook</a></li>
+                                <li><a href="">Email</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-col">
+                            <h3>Contatos</h3>
+                            <ul>
+                                <li>
+                                    <i class="fa fa-envelope" aria-hidden="true"></i> 
+                                    email@gmail.com
+                                </li>
+                                <li>
+                                    <i class="fa fa-phone" aria-hidden="true"></i>
+                                    99 9999 9999
+                                </li>
+                                <li>
+                                    <i class="fa fa-location-arrow" aria-hidden="true"></i>
+                                    Conjunto Raimundo portela, CEP: 64027-270, Teresina- PI
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p class="copyright">&copy;2021 @Padrão Agencia Digital</p>
+                    </div>
+                </div>
+                
+            </div>
+        </footer>
+        <!-- Fim Footer -->
+        <div class="button-whasapp">
+            <a type="button" href="https://api.whatsapp.com/send?phone=5548912345678&text=Olá!%20Encontrei%20seu%20site%20na%20Internet%20e%20preciso%20de%20seus%20serviços." class="float" target="_blank" onclick="goog_report_conversion('https://api.whatsapp.com/send?phone=554899999999&text=Olá!%20Entrei%20em%20seu%20site%20e%20preciso%20de%20seus%20serviços.')">
+                <i class="fa fa-whatsapp my-float" aria-hidden="true"></i>
+            </a>
+        </div>        
+        <!-- Jquery -->
+        <script src="{% static 'js/jquery.min.js' %}"></script>
+        <!-- popper -->
+        <script src="{% static 'js/popper.min.js' %}"></script>
+        <!-- bootstrap -->
+        <script src="{% static 'js/bootstrap.min.js' %}"></script>
+        <!-- Main -->
+        <script src="{% static 'js/main.js' %}"></script>
+        <!-- owl carousel js -->
+        <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+        <!-- Icons -->
+        <script src="https://kit.fontawesome.com/d8695f59a3.js" crossorigin="anonymous"></script>
+        <!-- Scrollit Js-->
+        <script src="{% static 'js/scrollIt.min.js' %}"></script>
+        <!-- AOS -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                offset: 400,
+                duration: 1000,
+            });
+        </script>
+    </body>
+</html>
