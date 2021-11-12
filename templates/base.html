@@ -36,22 +36,37 @@
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link active btn-efect" aria-current="page" data-scroll-nav="0" href="#">Home</a>
+                        <a class="nav-link active btn-efect" aria-current="page" href="{% url 'index' %}">Home</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Serviços
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="{% url 'landing_page' %}">Landing Page</a>
+                            <a class="dropdown-item" href="{% url 'site_institucional' %}">Site Institucional</a>
+                            <!-- <div class="dropdown-divider"></div> -->
+                            <a class="dropdown-item" href="{% url 'loja_virtual' %}">Loja Virtual</a>
+                            <a class="dropdown-item" href="{% url 'social_media' %}">Social Media</a>
+                        </div>
+                    </li>
+                    <!-- <li class="nav-item">
                         <a class="nav-link active btn-efect" aria-current="page" data-scroll-nav="1" href="#">Serviços</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link active btn-efect" aria-current="page" href="{% url 'sobre_nos' %}">Sobre nós</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active btn-efect" aria-current="page" data-scroll-nav="2" href="#">Sobre nós</a>
+                        <a class="nav-link active btn-efect" aria-current="page" href="{% url 'portifolio' %}">Portifólio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active btn-efect" aria-current="page" data-scroll-nav="3" href="#">Portifólio</a>
+                        <a class="nav-link active btn-efect" aria-current="page" href="{% url 'duvidas' %}">Duvidas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active btn-efect" aria-current="page" data-scroll-nav="4" href="#">Duvidas</a>
+                        <a class=" nav-link active btn-efect" aria-current="page" href="{% url 'contato' %}">Contato</a>
                     </li>
                     <li class="nav-item">
-                        <a class=" nav-link active btn-efect" aria-current="page" data-scroll-nav="5" href="#">Contato</a>
+                        <a class=" nav-link active btn-efect btn-light" aria-current="page" href="{% url 'orcamento' %}">Orçamento</a>
                     </li>
                 </ul>
             </div>
