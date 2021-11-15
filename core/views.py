@@ -24,6 +24,10 @@ def lojaVirtual(request):
     return render(request, "servicos/loja_virtual.html")
 
 
+def seo(request):
+    return render(request, "servicos/seo.html")
+
+
 def socialMedia(request):
     return render(request, "servicos/social_media.html")
 

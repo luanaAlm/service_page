@@ -262,28 +262,6 @@ ul {
 .home-img {
   position: relative;
 }
-/* .home-img .circle {
-  position: absolute;
-  z-index: 1;
-  height: 400px;
-  width: 400px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 50%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.home-img .circle::before {
-  content: "";
-  position: absolute;
-  height: 60px;
-  width: 60px;
-  background-color: rgba(255, 255, 255, 0.4);
-  border-radius: 50px;
-  left: 3px;
-  transform-origin: 170px 170px;
-  animation: spin_01 10s linear infinite;
-} */
 .home .home-btn {
   margin-top: 40px;
 }
@@ -305,56 +283,51 @@ ul {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
-/* .services .row {
-  display: flex;
-  flex-wrap: wrap;
-} */
-.services-content {
-  box-shadow: var(--shadow-black-100);
-  border-radius: 10px;
-  height: 35rem;
-}
-.services-content .services-header {
-  padding: 20px 30px;
-  border-bottom: 1px solid var(--block-alpha-100);
-}
-.services-content .services-header h4 {
-  font-size: 30px;
-  font-weight: 700;
-  text-align: center;
-  color: var(--main-color);
-  padding: 10px 10px;
-}
-.services-content .services-item p {
-  font-size: 16px;
-  font-weight: 700;
-  text-align: center;
-  color: var(--block-400);
-  padding: 20px 30px;
-}
-/* .services-content .services-item .currency {
-} */
-.services-content .services-body {
-  padding: 0 30px;
-}
-.services-content .services-body ul li {
-  font-size: 16px;
-  font-weight: 500;
-  color: var(--block-400);
-  padding: 10px 0 10px 30px;
-  border-bottom: 1px solid var(--block-alpha-100);
-  line-height: 26px;
-  position: relative;
-}
-.services-content .services-body ul li:last-child {
-  border-bottom: none;
-}
-
-.services-content .services-body ul li i {
-  color: var(--main-color);
+.services::before {
+  content: "";
   position: absolute;
   left: 0;
-  top: 12px;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: var(--main-to-dark-color);
+  opacity: 0.8;
+}
+.services-padding {
+  padding-bottom: 40px;
+}
+.services-item {
+  background-color: var(--block-000);
+  padding: 30px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: var(--shadow-black-100);
+  height: 20rem;
+}
+.services-item i {
+  font-size: 30px;
+  color: var(--main-color);
+  display: inline-block;
+}
+.services-item h3 {
+  font-size: 22px;
+  color: var(--block-900);
+  margin: 20px 0;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.services-item p {
+  font-weight: 400;
+  color: var(--block-400);
+  font-size: 16px;
+  margin: 0 0 30px;
+  line-height: 26px;
+}
+.services-item a {
+  color: var(--main-color);
+  font-weight: 600;
+  text-decoration: none;
 }
 /*--------------------------------------------------------------
 # emphasis/destaques
@@ -424,7 +397,7 @@ ul {
   width: 100%;
 }
 /*--------------------------------------------------------------
-# Missão visao e valores
+# Missão visao e valores / serviços
 --------------------------------------------------------------*/
 .miss-vis-val {
   background-attachment: fixed;
@@ -682,9 +655,9 @@ ul {
 .orcamento-footer {
   background-color: var(--block-100);
 }
-/* .orcamento-footer-title {
-  margin-bottom: 60px;
-} */
+.orcamento-fa i {
+  padding-left: 20px;
+}
 .orcamento-footer-title h4 {
   font-size: 50px;
   color: var(--block-900);
@@ -827,15 +800,6 @@ ul {
   .navbar.navbar-shrink .navbar-nav {
     background-color: var(--main-color);
   }
-  /* .home-img .circle {
-    height: 320px;
-    width: 320px;
-  }
-  .home-img .circle::before {
-    left: 18px;
-    top: 18px;
-    transform-origin: 142px 142px;
-  } */
   .home-text h1 {
     font-size: 40px;
   }

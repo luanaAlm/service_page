@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import Duvidas, index, cliente_novo, landingPage, lojaVirtual, siteInstitucional, socialMedia, sobreNos, Portifolio, Contato, Orcamento
+from .views import Duvidas, index, cliente_novo, landingPage, lojaVirtual, siteInstitucional, seo, socialMedia, sobreNos, Portifolio, Contato, Orcamento
 
 urlpatterns = [
     path('', index, name='index'),
@@ -8,6 +8,7 @@ urlpatterns = [
     path('landing_page', landingPage, name='landing_page'),
     path('site_institucional', siteInstitucional, name='site_institucional'),
     path('loja_virtual', lojaVirtual, name='loja_virtual'),
+    path('seo', seo, name='seo'),
     path('social_media', socialMedia, name='social_media'),
     # Sobre nós
     path('sobre_nos', sobreNos, name='sobre_nos'),
