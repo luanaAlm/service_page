@@ -1,6 +1,6 @@
 from django.contrib import messages
 from django.shortcuts import render
-from .models import Portifolio_cliente
+from .models import Portifolio_cliente, Social_Media
 from .form import ClienteForm
 from django.shortcuts import redirect, render
 
@@ -37,7 +37,11 @@ def sobreNos(request):
 
 
 def Portifolio(request):
-    return render(request, "portifolio.html")
+    port2 = Portifolio_cliente.objects.all()
+    socialMedia = Social_Media.objects.all()
+    return render(request, "portifolio.html", {
+        "port2": port2, "socialMedia": socialMedia
+    })
 
 
 def Duvidas(request):

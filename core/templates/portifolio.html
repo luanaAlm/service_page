@@ -1,5 +1,55 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block main %}
+<!-- Inicio portfolio -->
+<section class="portfolio section-padding" id="portfolio" data-scroll-index="3">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="section-title">
+                    <h2>Portifólio <span>de sites</span></h2>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            {% for i in port2 %}
+            <div class="col-lg-4 col-md-6">
+                <div class="portfolio-item" data-aos="fade-up">
+                    <img  src="{{i.image.url}}" class="w-100 img-thumbnail" alt="{{i.empresa}}">
+                    <h3>{{i.empresa}}</h3>
+                        <span>{{i.cidade}} - {{i.estado}}</span>
+                        <a href="{{i.link}}" target="_blank" class="btn btn-portfolio">Saiba Mais</a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+<!-- Fim portfolio -->
 
+<!-- Inicio portfolio -->
+<section class="portfolio section-padding" id="portfolio" data-scroll-index="3">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="section-title">
+                    <h2>Social <span>Midia</span></h2>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            {% for i in socialMedia %}
+            <div class="col-lg-4 col-md-6">
+                <div class="portfolio-item" data-aos="fade-up">
+                    <img  src="{{i.logomarca.url}}" class="w-100 img-thumbnail" alt="{{i.empresa}}">
+                    <!-- <h3>{{i.empresa}}</h3> -->
+                        <!-- <span>{{i.cidade}} - {{i.estado}}</span>
+                        <a href="{{i.link}}" target="_blank" class="btn btn-portfolio">Saiba Mais</a> -->
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+<!-- Fim portfolio -->
 {% endblock %}

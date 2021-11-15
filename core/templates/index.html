@@ -265,30 +265,15 @@
         </div>
         <div class="row justify-content-center">
             {% for i in port %}
-            <div class="col-lg-4 col-md-6" >
-                <div class="portfolio portfolio-padding" data-aos="fade-up">
-                    <div class="portfolio-item">
-                        <img  src="{{i.image.url}}" alt="portfolio">
-                    </div>
-                    <div class="portfolio-item-text">
-                        <h3>{{i.empresa}}</h3>
+            <div class="col-lg-4 col-md-6">
+                <div class="portfolio-item" data-aos="fade-up">
+                    <img  src="{{i.image.url}}" class="w-100 img-thumbnail" alt="{{i.empresa}}">
+                    <h3>{{i.empresa}}</h3>
                         <span>{{i.cidade}} - {{i.estado}}</span>
                         <a href="{{i.link}}" target="_blank" class="btn btn-portfolio">Saiba Mais</a>
-                    </div>
                 </div>
             </div>
             {% endfor %}
-            
-            <!-- <div class="owl-carousel portfolio-carousel">
-                {% for i in portifolios %}
-                    <div class="portfolio-item">
-                        <img class="img-fluid" src="{{i.image.url}}" alt="portfolio">
-                        <h3>{{i.empresa}}</h3>
-                        <span>{{i.cidade}} - {{i.estado}}</span>
-                        <a href="{{i.link}}" class="btn btn-2">Saiba Mais</a>
-                    </div>
-                    {% endfor %}
-            </div> -->
         </div>
         
     </div>
