@@ -467,39 +467,42 @@ ul {
 # portfolio
 --------------------------------------------------------------*/
 .portfolio-item {
-  margin: 15px;
-  padding: 15px;
+  /* margin: 10px; */
+  padding: 5px;
   border-radius: 10px;
   box-shadow: var(--shadow-black-100);
 }
-.portfolio-item h3 {
-  padding-top: 10px;
+.portfolio-padding {
+  padding-bottom: 40px;
+}
+.portfolio-item img {
+  width: 560px;
+  height: 260px;
+  object-fit: cover;
+}
+.portfolio-item-text h3 {
+  /* padding-top: 10px; */
   font-size: 18px;
   color: var(--block-900);
   font-weight: 700;
   margin: 15px 0 5px;
   text-transform: capitalize;
 }
-
-.portfolio-item span {
-  padding-bottom: 15px;
+.portfolio-item-text span {
+  /* padding-bottom: 15px; */
   display: block;
   font-size: 16px;
   font-weight: 500;
   color: var(--block-400);
   text-transform: capitalize;
 }
-.portfolio-item img {
-  width: 360px;
-  height: 160px;
-  object-fit: cover;
-}
-.portfolio-item a {
+
+.portfolio-item-text a {
   text-decoration: none;
 }
 .btn-portfolio {
   background-color: var(--main-color);
-  padding: 5px 15px;
+  /* padding: 5px 5px; */
   border: none;
   border-radius: 30px;
   color: #ffffff;
