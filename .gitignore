@@ -6,6 +6,7 @@ __pycache__
 db.sqlite3
 media
 img
+img_portifolio
 # Backup files # 
 *.bak 
 

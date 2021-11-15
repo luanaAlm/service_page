@@ -2,9 +2,9 @@
 {% load static %}
 {% load bootstrap %} 
 
-{% block main %}         
+{% block main %}    
 <!-- Inincio Home -->
-<section class="home d-flex align-items-center" id="home" >
+<section class="home d-flex align-items-center" id="home" data-scroll-index="0">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-md-7">
@@ -14,14 +14,9 @@
                         presença na web. Se você não tem um site, você está perdendo 
                         todo esse potencial de negócio.</p>
                     <div class="home-btn">
-                        <a href="{% url 'orcamento' %}" class="btn btn-3">
-                            <i class="fa fa-envelope-open-o" aria-hidden="true"></i>
-                            Orçamento
-                        </a>
-                        <a href="#" class="btn btn-1">
+                        <a href="https://api.whatsapp.com/send?phone=5586995971340&text=Olá!%20Encontrei%20seu%20site%20na%20Internet%20e%20preciso%20de%20seus%20serviços." class="btn btn-1">
                             <i class="fa fa-whatsapp" aria-hidden="true"></i>
-                            Entre em Contato
-                        </a>
+                            Entre em Contato</a>
                     </div>
                 </div>
             </div>
@@ -34,6 +29,7 @@
     </div>
 </section>
 <!-- Fim Home -->
+
 <!-- Inicio nossos Clientes -->
 <section class="clientes section-padding">
     <div class="container">
