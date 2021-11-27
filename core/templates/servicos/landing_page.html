@@ -1,5 +1,24 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block main %}
-
+<!-- Inincio Home -->
+<section class="landing_page d-flex align-items-center" id="home">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-12">
+                <div class="landing_page-text" data-aos="fade-up">
+                    <h1> {{text}}</h1>
+                    <p>{{subtext}}</p>
+                    <div class="landing_page-btn">
+                        <a href="{% url 'orcamento' %}" class="btn btn-1">
+                            FAÇA SEU ORÇAMENTO 
+                            <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Fim Home -->
 {% endblock %}

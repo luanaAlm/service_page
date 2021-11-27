@@ -15,7 +15,12 @@ def index(request):
 
 
 def landingPage(request):
-    return render(request, "servicos/landing_page.html")
+    text = 'Landing Page'
+    subtext = 'Página de propriedade única da web determina para conversão de um anunciante.'
+    return render(request, "servicos/landing_page.html", {
+        "text": text,
+        "subtext": subtext
+    })
 
 
 def siteInstitucional(request):
