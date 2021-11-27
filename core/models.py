@@ -88,11 +88,23 @@ class Social_Media (models.Model):
     )
     ID_Social_Media = models.AutoField(primary_key=True)
     logomarca = models.ImageField(
-        upload_to="img_portifolio/%y", blank=False, null=False)
+        upload_to="Social_Media/%y", blank=False, null=False)
     empresa = models.CharField(max_length=100, blank=False, null=False)
     cidade = models.CharField(max_length=100, blank=False, null=False)
     estado = models.CharField(max_length=100, choices=UF_CHOICES)
 
     def __str__(self):
         template = '{0.empresa} {0.cidade} {0.estado}'
+        return template.format(self)
+
+
+class Depoimento (models.Model):
+    ID_Depoimentos = models.AutoField(primary_key=True)
+    imageDep = models.ImageField(
+        upload_to="img_Depoimentos/%y", blank=False, null=False)
+    nome_depoente = models.CharField(max_length=100, blank=False, null=False)
+    cliente_Dep = models.CharField(max_length=200, blank=False, null=False)
+
+    def __str__(self):
+        template = '{0.ID_Depoimentos} - {0.nome_depoente} - {0.cliente_Dep}'
         return template.format(self)

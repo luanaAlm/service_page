@@ -1,14 +1,16 @@
 from django.contrib import messages
 from django.shortcuts import render
-from .models import Portifolio_cliente, Social_Media
+from .models import Depoimento, Portifolio_cliente, Social_Media
 from .form import ClienteForm
 from django.shortcuts import redirect, render
 
 
 def index(request):
     port = Portifolio_cliente.objects.all()
+    depoimento = Depoimento.objects.all()
     return render(request, "index.html", {
         "port": port,
+        "depoimento": depoimento,
     })
 
 

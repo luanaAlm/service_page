@@ -17,7 +17,7 @@ $(document).ready(function(){
         responsiveClass:true,
         responsive:{
             0:{
-                items:1,
+                items:2,
             },
             600:{
                 items:2,
@@ -27,11 +27,11 @@ $(document).ready(function(){
             }
         }
     });
-    /* ---owl carousel portfolio
-    $('.portfolio-carousel').owlCarousel({
+    /* ---owl carousel depoiments--- */
+    $('.depoiments-carousel').owlCarousel({
         loop:true,
         margin:0,
-        autoplay:true,
+        // autoplay:true,
         responsiveClass:true,
         responsive:{
             0:{
@@ -44,7 +44,7 @@ $(document).ready(function(){
                 items:3,
             }
         }
-    });--- */
+    });
     /* ---scrolling - scrollit --- */
     $(function(){
         $.scrollIt({
