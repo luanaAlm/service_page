@@ -16,7 +16,7 @@ def index(request):
 
 def landingPage(request):
     text = 'Landing Page'
-    subtext = 'Página de propriedade única da web determina para conversão de um anunciante.'
+    subtext = 'Conquiste mais cliente e venda mais produtos ou serviços da sua empresa.'
     return render(request, "servicos/landing_page.html", {
         "text": text,
         "subtext": subtext

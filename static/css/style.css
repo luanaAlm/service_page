@@ -523,7 +523,7 @@ ul {
   margin: 0;
 }
 /*--------------------------------------------------------------
-# landing_page/Sobre Nós
+# landing_page
 --------------------------------------------------------------*/
 .landing_page {
   min-height: 100vh;
@@ -551,19 +551,10 @@ ul {
   margin: 0;
   font-weight: 400;
 }
-/* .landing_page-img img {
-  max-width: 850px;
-  width: 100%;
-  animation: bounceTop_01 3s ease infinite;
-}
-.landing_page-img {
-  position: relative;
-} */
 .landing_page .landing_page-btn {
   text-align: center;
   margin-top: 40px;
 }
-
 /*--------------------------------------------------------------
 # Sobre Nós
 --------------------------------------------------------------*/
