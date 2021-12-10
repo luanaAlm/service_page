@@ -866,15 +866,15 @@ ul {
   padding-left: 5px;
 }
 .footer .copyright {
-  padding: 20px 0;
+  padding: 10px 0;
   text-align: center;
   font-size: 16px;
-  color: rgba(255, 255, 255, 0.9);
+  color: var(--block-000);
   font-weight: 300;
-  margin: 50px 0 0;
-  border-top: 1px solid rgba(255, 255, 225, 0.2);
 }
-
+.footer .copyright a {
+  color: var(--block-000) !important;
+}
 /*--------------------------------------------------------------
 # WhatsApp
 --------------------------------------------------------------*/
