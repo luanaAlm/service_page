@@ -24,7 +24,10 @@ def landingPage(request):
 
 
 def siteInstitucional(request):
-    return render(request, "servicos/site_institucional.html")
+    text = 'Site Institucional'
+    subtext = 'Mostre seus serviços e informações e todo o diferencial do seu negócio.'
+
+    return render(request, "servicos/site_institucional.html", {"text": text, "subtext": subtext})
 
 
 def lojaVirtual(request):
