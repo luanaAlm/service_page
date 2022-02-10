@@ -31,7 +31,7 @@
 </section>
 <!-- Fim Home -->
 <!-- Inicio nossos Clientes -->
-<section class="clientes section-padding">
+<!-- <section class="clientes section-padding">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-8">
@@ -40,21 +40,21 @@
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="owl-carousel clientes-carousel">
-                {% for i in port %}
-                    <!-- <div class="col-lg-4 col-md-6 col-6"> -->
-                        <div class="clientes-item">
-                            <div class="clientes-img-box">
-                                <img src="{{i.logomarca.url}}" alt="{{i.empresa}}">
+        <div class="row justify-content-center">
+            <div class="col-8">
+                <div class="owl-carousel clientes-carousel">
+                    {% for i in port %}
+                            <div class="clientes-item">
+                                <div class="clientes-img-box">
+                                    <img src="{{i.logomarca.url}}" alt="{{i.empresa}}">
+                                </div>
                             </div>
-                        </div>
-                    <!-- </div> -->
-                {% endfor %}
-            </div>
+                    {% endfor %}
+                </div>
+            </div>   
         </div>
     </div>
-</section>
+</section> -->
 <!-- Fim nossos Clientes -->
 <!-- Inicio Services -->
 <section class="services section-padding" id="services" >
@@ -70,22 +70,54 @@
             <div class="services-padding col-lg-4 col-md-6">
                 <div class="services-item" data-aos="zoom-in">
                     <i class="fa fa-bullhorn" aria-hidden="true"></i>
-                    <h3>Landing Page</h3>
-                    <p>página de propriedade única da web determina para conversão 
-                        de um anunciante.
+                    <h3>Landing Page </h3>
+                    <p>Ou Página de Vendas é ideal para vender um produto ou serviço.
                     </p>
                     <a href="{% url 'landing_page' %}">Saiba mais</a>
                 </div>
             </div>
             <div class="services-padding col-lg-4 col-md-6">
                 <div class="services-item" data-aos="zoom-in">
+                    <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                    <h3>Site Pessoal</h3>
+                    <p>
+                        Mostra quem você é ou exibir serviços 
+                        que uma pessoa oferece. Ideal para autônomos.
+                    </p>
+                    <a href="{% url 'loja_virtual' %}">Saiba Mais</a>
+                </div>
+            </div>
+            <div class="services-padding col-lg-4 col-md-6">
+                <div class="services-item" data-aos="zoom-in">
+                    <i class="fa fa-bullseye" aria-hidden="true"></i>
+                    <h3>Site One Page</h3>
+                    <p>
+                        Website de uma unica página que mostra todas as informações 
+                        sobre sua empresa ou serviço.
+                    </p>
+                    <a href="{% url 'seo' %}">Saiba Mais</a>
+                </div>
+            </div>
+            <div class="services-padding col-lg-4 col-md-6">
+                <div class="services-item" data-aos="zoom-in">
                     <i class="fa fa-desktop" aria-hidden="true"></i>
-                    <h3>Site Institucional</h3>
+                    <h3>Site Empresarial</h3>
                     <p>
                         Espaço para a sua empresa na web de importante 
                         comunicação com o público.
                     </p>
                     <a href="{% url 'site_institucional' %}">Saiba Mais</a>
+                </div>
+            </div>
+            <div class="services-padding col-lg-4 col-md-6">
+                <div class="services-item" data-aos="zoom-in">
+                    <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                    <h3>Catálogo de produtos</h3>
+                    <p>
+                        Catálogos de produtos é ideal para quem deseja ter um site com 
+                        seus produtos e mostrá-los a seus clientes.
+                    </p>
+                    <a href="{% url 'loja_virtual' %}">Saiba Mais</a>
                 </div>
             </div>
             <div class="services-padding col-lg-4 col-md-6">
@@ -111,16 +143,6 @@
             </div>
             <div class="services-padding col-lg-4 col-md-6">
                 <div class="services-item" data-aos="zoom-in">
-                    <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
-                    <h3>Mídia Social</h3>
-                    <p>
-                        Criação de artes e gerenciamento de redes sociais.
-                    </p>
-                    <a href="{% url 'seo' %}">Saiba Mais</a>
-                </div>
-            </div>
-            <div class="services-padding col-lg-4 col-md-6">
-                <div class="services-item" data-aos="zoom-in">
                     <i class="fa fa-cloud-upload" aria-hidden="true"></i>
                     <h3>Hospedagem</h3>
                     <p>
@@ -129,6 +151,18 @@
                     <a href="{% url 'seo' %}">Saiba Mais</a>
                 </div>
             </div>
+            <div class="services-padding col-lg-4 col-md-6">
+                <div class="services-item" data-aos="zoom-in">
+                    <i class="fa fa-cloud-upload" aria-hidden="true"></i>
+                    <h3>Domínio</h3>
+                    <p>
+                        Nome que serve para localizar e 
+                        identificar sua empresa ou serviço na internet
+                    </p>
+                    <a href="{% url 'seo' %}">Saiba Mais</a>
+                </div>
+            </div>
+            
         </div>
     </div>
     <!-- Inicio emphasis/destaques -->
