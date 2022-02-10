@@ -8,9 +8,12 @@ from django.shortcuts import redirect, render
 def index(request):
     port = Portifolio_cliente.objects.all()
     depoimento = Depoimento.objects.all()
+    form = ClienteForm()
+
     return render(request, "index.html", {
         "port": port,
         "depoimento": depoimento,
+        "form": form
     })
 
 

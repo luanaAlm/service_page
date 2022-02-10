@@ -251,13 +251,14 @@
     </div>
 </section>
 <!-- Fim portfolio -->
+
 <!-- Inicio Depoimento -->
 <section class="depoiments section-padding">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-8">
                 <div class="section-title">
-                    <h2>O que os nossos <span>Clientes</span> dizem</h2>
+                    <h2>O que os nossos <span>Clientes dizem </span></h2>
                 </div>
             </div>
         </div>
@@ -410,4 +411,74 @@
     </div>
 </section>
 <!--Fim FAQ -->
+<!-- Inicio Contact -->
+<section class="contact section-padding" id="contact" >
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="section-title">
+                    <h2>Fale <span>Conosco</span></h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-5">
+                <div class="contact-info">
+                    <h3>Duvidas e informações</h3>
+                    <div class="contact-info-item">
+                        <i class="fa fa-location-arrow" aria-hidden="true"></i>
+                        <h4>Localização da empresa</h4>
+                        <p>Conjunto Raimundo Portela, Teresina - PI</p>
+                    </div>
+                    <div class="contact-info-item">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <h4>Endereço de Email</h4>
+                        <p>contato@padraoagenciadigital.com.br</p>
+                    </div>
+                    <div class="contact-info-item">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <h4>Número de telefone</h4>
+                        <p>(86) 9 9983 4805</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8 col-md-7">
+                <div class="contact-form">
+                    <form action="{% url 'cliente_novo' %}" method="POST">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <!--Seguranca-->
+                                    {% csrf_token %}
+                                    {{ form|bootstrap }}
+                                        
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <button type="submit" class="btn btn-2">Enviar Mensagem</button>
+                            </div>
+                        </div>
+                    </form> 
+                </div>
+            </div>
+            <!-- alerta -->
+        <!-- {% if messages %}
+            {% for message in messages %}
+                <div class="alert {{message.tags}} alert-dismissible fade show" role="alert">
+                    <strong>{{message}}</strong>
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div> 
+            {% endfor %}
+        {% endif %} -->
+        <!--Fim Alerta -->
+        </div>
+    </div>
+
+</section>
+<!-- Fim Contact -->
+
 {% endblock %}
