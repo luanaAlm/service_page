@@ -18,7 +18,7 @@ def index(request):
 
 
 def politicaDePrivacidade(request):
-    return render(request, "cookie/politica_de_provacidade.html")
+    return render(request, "cookie/politica_de_privacidade.html")
 
 
 def landingPage(request):
