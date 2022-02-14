@@ -21,61 +21,78 @@
         <title>Padrão Agência Digital</title>
     </head>
     <body>
-        <!-- Inicio Nav -->
-        <nav class="navbar navbar-expand-lg fixed-top">
-            <div class="container">
-                <!-- Brand -->
-            <a class="navbar-brand" href="{% url 'index' %}">
-                <img width="140px" src="{% static 'img/logo.png'%}" alt="Padrão agencia digital">
-            </a>
-            <!-- Toggler/collapsibe Button -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <i class="fas fa-bars"></i>
-            </button>
-            <!-- Navbar links -->
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active btn-efect" aria-current="page" href="{% url 'index' %}">Home</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Serviços
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="{% url 'landing_page' %}">Landing Page</a>
-                            <a class="dropdown-item" href="{% url 'site_institucional' %}">Site Institucional</a>
-                            <!-- <div class="dropdown-divider"></div> -->
-                            <a class="dropdown-item" href="{% url 'loja_virtual' %}">Loja Virtual</a>
-                            <a class="dropdown-item" href="{% url 'social_media' %}">Social Media</a>
-                        </div>
-                    </li>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link active btn-efect" aria-current="page" data-scroll-nav="1" href="#">Serviços</a>
-                    </li> -->
-                    <li class="nav-item">
-                        <a class="nav-link active btn-efect" aria-current="page" href="{% url 'sobre_nos' %}">Sobre nós</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active btn-efect" aria-current="page" href="{% url 'portifolio' %}">Portifólio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active btn-efect" aria-current="page" href="{% url 'duvidas' %}">Duvidas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class=" nav-link active btn-efect" aria-current="page" href="{% url 'contato' %}">Contato</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class=" nav-link active btn-efect " aria-current="page" href="{% url 'orcamento' %}">Orçamento</a>
-                    </li>
-                </ul>
-            </div>
-            </div>
-        </nav>
-        <!-- Fim Nav -->
+        
+        <header>
+            <!-- Inicio Nav -->
+            <nav class="navbar navbar-expand-lg fixed-top">
+                <div class="container">
+                    <!-- Brand -->
+                <a class="navbar-brand" href="{% url 'index' %}">
+                    <figure>
+                        <img width="45px" src="{% static 'img/logo_nav.png'%}" loading="lazy" alt="Padrão agencia digital">
+                    </figure>
+                </a>
+                <!-- Toggler/collapsibe Button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <!-- Navbar links -->
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active btn-efect" aria-current="page" href="{% url 'index' %}">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Serviços
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="{% url 'landing_page' %}">Landing Page</a>
+                                <a class="dropdown-item" href="{% url 'site_institucional' %}">Site Institucional</a>
+                                <!-- <div class="dropdown-divider"></div> -->
+                                <a class="dropdown-item" href="{% url 'loja_virtual' %}">Loja Virtual</a>
+                                <a class="dropdown-item" href="{% url 'social_media' %}">Social Media</a>
+                            </div>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link active btn-efect" aria-current="page" data-scroll-nav="1" href="#">Serviços</a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link active btn-efect" aria-current="page" href="{% url 'sobre_nos' %}">Sobre nós</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active btn-efect" aria-current="page" href="{% url 'portifolio' %}">Portifólio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active btn-efect" aria-current="page" href="{% url 'duvidas' %}">Duvidas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class=" nav-link active btn-efect" aria-current="page" href="{% url 'contato' %}">Contato</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class=" nav-link active btn-efect " aria-current="page" href="{% url 'orcamento' %}">Orçamento</a>
+                        </li>
+                    </ul>
+                </div>
+                </div>
+            </nav>
+            <!-- Fim Nav -->
+        </header>
         <div class="">
             {% block main %} {% endblock %}
+            
         </div>
+        <!-- COOKIES -->
+        <div class="cookie-container">
+            <p>
+            Utilizamos cookies essenciais para melhor expriência do usuário, 
+            para conferir detalhadamente leia nossa 
+            <a href="">Política de Privacidade</a>.
+            Ao continuar navegando, você declara estar ciente dessas condições.
+            </p>
+            <button class="cookie-btn">OK</button>
+        </div>
+        
         <!-- Inicio Orçamento -->
         <section class="orcamento-footer section-padding">
             <div class="container">
@@ -104,12 +121,20 @@
                 <div class="row">
                     <div class="col-lg-3 col-md-6">
                         <div class="footer-col">
+                            <figure>
+                                <img width="145px" src="{% static 'img/logo.png'%}" loading="lazy" alt="Padrão agencia digital">
+                            </figure>
                             <h3>Sobre nós</h3>
                             <p>A Padrão Agencia Digital é uma empresa de criação de 
                                 sites profissionais.
                                 Nós projetamos, desenvolvemos e gerenciamos sites de 
                                 para seu empreendimento e clientes.
                             </p>
+                            <br>
+                            <p><b>Formas de Pagamento</b></p>
+                            <figure>
+                                <img width="500px" src="{% static 'img/pagamento.png'%}" loading="lazy" alt="Formas de Pagaamento">
+                            </figure>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
@@ -173,7 +198,7 @@
             <a type="button" href="https://api.whatsapp.com/send?phone=5548912345678&text=Olá!%20Encontrei%20seu%20site%20na%20Internet%20e%20preciso%20de%20seus%20serviços." class="float" target="_blank" onclick="goog_report_conversion('https://api.whatsapp.com/send?phone=554899999999&text=Olá!%20Entrei%20em%20seu%20site%20e%20preciso%20de%20seus%20serviços.')">
                 <i class="fa fa-whatsapp my-float" aria-hidden="true"></i>
             </a>
-        </div>        
+        </div> 
         <!-- Jquery -->
         <script src="{% static 'js/jquery.min.js' %}"></script>
         <!-- popper -->
