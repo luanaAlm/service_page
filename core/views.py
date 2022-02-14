@@ -17,6 +17,10 @@ def index(request):
     })
 
 
+def politicaDePrivacidade(request):
+    return render(request, "cookie/politica_de_provacidade.html")
+
+
 def landingPage(request):
     text = 'Landing Page'
     subtext = 'Conquiste mais cliente e venda mais produtos ou serviços da sua empresa.'

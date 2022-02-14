@@ -1,9 +1,11 @@
 from django.urls import path
-from .views import Duvidas, index, cliente_novo, landingPage, lojaVirtual, siteInstitucional, seo, socialMedia, sobreNos, Portifolio, Contato, Orcamento
-
+from .views import *
 urlpatterns = [
     path('', index, name='index'),
     path('cliente_novo/', cliente_novo, name='cliente_novo'),
+    # cookie
+    path('politica_de_priacidade', politicaDePrivacidade,
+         name='politica_de_priacidade'),
     # serviços
     path('landing_page', landingPage, name='landing_page'),
     path('site_institucional', siteInstitucional, name='site_institucional'),
