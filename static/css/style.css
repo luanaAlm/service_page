@@ -901,36 +901,49 @@ ul {
 # Cookie
 --------------------------------------------------------------*/
 .cookie-container {
-  position: fixed !important;
+  position: fixed;
   bottom: -100%;
   left: 0;
   right: 0;
-  background: #2f3640;
-  color: #f5f6fa;
-  padding: 0 32px;
-  box-shadow: 0 -2px 16px #2f3640;
-
-  transition: 400ms;
+  background-color: var(--block-000);
+  bottom: 20px;
+  padding: 20px;
+  color: var(--main-color);
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 997;
+  box-shadow: var(--block-900);
+  transition: 300ms;
 }
 .cookie-container.active {
   bottom: 0;
 }
 .cookie-container p {
-  margin: 24px 0;
-  line-height: 2;
+  font-size: 16px;
+  color: var(--bg-dark);
+  font-weight: 500;
+  line-height: 16px;
+  margin: 0;
 }
 .cookie-container a {
-  color: #f5f6fa;
+  font-size: 16px;
+  color: var(--bg-dark);
+  font-weight: 500;
+  line-height: 16px;
+  margin: 0;
 }
 .cookie-btn {
-  background: #e84118;
+  background-color: var(--main-color);
   border: 0;
-  color: #f5f6fa;
-  padding: 12px;
-  font-size: 18px;
-  margin-bottom: 8px;
-  border-radius: 8px;
+  color: #fff;
   cursor: pointer;
+  padding: 10px 30px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 12px;
+  margin: 0;
 }
 /*--------------------------------------------------------------
 # Responsividade
