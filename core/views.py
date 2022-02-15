@@ -18,7 +18,14 @@ def index(request):
 
 
 def politicaDePrivacidade(request):
-    return render(request, "cookie/politica_de_privacidade.html")
+    marca = 'Padrão Agência Digital'
+    contato_email = 'contato@padraoagenciadigital.com.br'
+    telefone = '(86) 9986-4805'
+    return render(request, "cookie/politica_de_privacidade.html", {
+        "marca": marca,
+        "contato_email": contato_email,
+        "telefone": telefone
+    })
 
 
 def landingPage(request):
