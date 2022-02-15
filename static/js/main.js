@@ -28,31 +28,7 @@ $(document).ready(function(){
         }
     });
     /* ---owl carousel depoiments--- */
-/* --- Cookies --- */
-const cookieContainer = document.querySelector(".cookie-container")
-const cookieButton = document.querySelector(".cookie-btn")  
-
-cookieButton.addEventListener("click", () =>{
-    cookieContainer.classList.remove("active");
-    localStorage.setItem("cookieBannerDisplayed", "true")
-});
-setTimeout(() => {
-    if(!localStorage.getItem("cookieBannerDisplayed")){
-        cookieContainer.classList.add("active");
-    }
-}, 2000);/* --- Cookies --- */
-const cookieContainer = document.querySelector(".cookie-container")
-const cookieButton = document.querySelector(".cookie-btn")  
-
-cookieButton.addEventListener("click", () =>{
-    cookieContainer.classList.remove("active");
-    localStorage.setItem("cookieBannerDisplayed", "true")
-});
-setTimeout(() => {
-    if(!localStorage.getItem("cookieBannerDisplayed")){
-        cookieContainer.classList.add("active");
-    }
-}, 2000);    $('.depoiments-carousel').owlCarousel({
+    $('.depoiments-carousel').owlCarousel({
         loop:true,
         margin:0,
         // autoplay:true,
@@ -79,7 +55,6 @@ setTimeout(() => {
     $(".nav-link").on("click", function(){
         $(".navbar-collapse").collapse("hide");
     });
-    
     /* --- Cookies --- */
     const cookieContainer = document.querySelector(".cookie-container")
     const cookieButton = document.querySelector(".cookie-btn")  
