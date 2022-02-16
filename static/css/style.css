@@ -946,8 +946,10 @@ ul {
   line-height: 12px;
   margin: 0;
 }
-/* .politicaPrivacidade {
-} */
+/*--------------------------------------------------------------
+# politicaPrivacidade
+--------------------------------------------------------------*/
+
 .politicaPrivacidade h1 {
   color: var(--block-900);
   font-size: 40px;
